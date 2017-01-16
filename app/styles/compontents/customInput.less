@@ -1,0 +1,25 @@
+.custom-input {
+  padding-top: 10px;
+
+  .input-title {
+    position: absolute;
+    transition: top .2s linear, left .2s linear;
+  }
+
+  .label {
+    top: -5px;
+    left: 0;
+    color: @label-color;
+
+    &:after {
+      content: ":";
+      padding-left: 2px;
+    }
+  }
+
+  .placeholder {
+    top: 18px;
+    left: 11px;
+    color: @placeholder-color;
+  }
+}
