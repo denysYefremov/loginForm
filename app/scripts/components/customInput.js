@@ -15,12 +15,7 @@ class CustomInput extends Component {
   }
 
   render() {
-    const { className, error, labelPlaceholder } = this.props;
-    const inputProps = { ...this.props };
-
-    delete inputProps.className;
-    delete inputProps.error;
-    delete inputProps.labelPlaceholder;
+    const { className, error, labelPlaceholder, ...inputProps } = this.props;
 
     let focused = false;
 
